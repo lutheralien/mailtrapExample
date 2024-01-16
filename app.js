@@ -14,7 +14,7 @@ const sendMail = async (email, subject, text, category) => {
       name: process.env.MAILTRAP_SENDER_NAME,
     };
 
-    const res = await client.send({
+   const res = await client.send({
       from: sender,
       to: [{ email }],
       subject,
